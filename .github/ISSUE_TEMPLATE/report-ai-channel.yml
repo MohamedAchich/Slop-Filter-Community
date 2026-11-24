@@ -1,0 +1,33 @@
+name: Report an AI channel
+description: Suggest a YouTube channel for the shared Slop Filter list.
+title: "AI channel: "
+labels: [ai-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! A channel joins the shared list after **3 different people** report it and a maintainer reviews it.
+        The extension fills in the first fields for you.
+  - type: input
+    id: channel_key
+    attributes:
+      label: Channel key
+      description: Filled in by the extension (for example h:@channelname). Do not edit.
+    validations:
+      required: true
+  - type: input
+    id: channel_name
+    attributes:
+      label: Channel name
+    validations:
+      required: true
+  - type: input
+    id: video_url
+    attributes:
+      label: Example video
+      description: A link to one video from this channel.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you think it's AI?
+      description: Optional. For example "AI voice, AI images, 5 uploads a day".

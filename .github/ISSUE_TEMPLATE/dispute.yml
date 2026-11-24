@@ -1,0 +1,22 @@
+name: This channel is not AI
+description: Ask to remove a channel from the shared list.
+title: "Not AI: "
+labels: [dispute]
+body:
+  - type: input
+    id: channel_key
+    attributes:
+      label: Channel key
+      description: For example h:@channelname. Leave empty if you don't know it.
+  - type: input
+    id: channel_name
+    attributes:
+      label: Channel name
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it not AI?
+    validations:
+      required: true
