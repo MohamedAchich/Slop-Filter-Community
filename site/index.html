@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Slop Filter – hide AI-generated YouTube videos</title>
-  <meta name="description" content="A browser extension that hides or badges AI-generated videos on YouTube. Runs entirely in your browser.">
+  <meta name="description" content="A browser extension that hides or labels AI-generated videos on YouTube. Runs entirely in your browser.">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,23 +13,24 @@
   <header><img src="icon.png" alt=""><strong>Slop Filter</strong></header>
 
   <h1>Your YouTube feed, without the AI slop.</h1>
-  <p class="lead">Slop Filter hides or badges AI-generated videos on YouTube: home, search, the sidebar and Shorts. It runs entirely in your browser.</p>
-  <p>
-    <!-- Replace with store links after publishing, and with your Google Form link for the waitlist. -->
-    <a class="cta" href="WAITLIST_FORM_URL">Join the waitlist</a>
-    <a class="cta secondary" href="https://github.com/MohamedAchich/Slop-Filter-Community">Reports &amp; shared list</a>
+  <p class="lead">Slop Filter hides or labels AI-generated videos on YouTube: home, search, the sidebar and Shorts. It runs entirely in your browser.</p>
+  <p class="actions">
+    <!-- At launch: replace the first link with the store links (Chrome, Edge, Firefox). -->
+    <a class="cta" href="https://github.com/MohamedAchich/Slop-Filter-Community">Get notified at launch</a>
+    <a class="cta secondary" href="https://github.com/MohamedAchich/Slop-Filter-Community">Report an AI channel</a>
   </p>
+  <p class="note">Coming soon for Chrome, Edge and Firefox. To hear about the launch, open GitHub and choose <b>Watch → Custom → Releases</b>.</p>
 
   <h2>How it works</h2>
   <div class="grid">
-    <div class="card"><b>YouTube's own label</b>Videos YouTube marks as “altered or synthetic content” are hidden.</div>
-    <div class="card"><b>Your flags</b>Hover any video and click “Flag AI”. That channel is gone for good.</div>
-    <div class="card"><b>Smart rules</b>Titles that say “AI generated”, “made with Sora” and similar get an “AI?” badge.</div>
+    <div class="card"><b>YouTube's own label</b>Videos YouTube marks as “altered or synthetic content” are caught automatically.</div>
+    <div class="card"><b>Your flags</b>Hover any video and click “Flag as AI”. Every video from that channel disappears.</div>
+    <div class="card"><b>Smart rules</b>Titles like “AI generated” or “made with Sora” get an “AI?” label. Videos <em>about</em> AI, and titles that say “no AI”, are left alone.</div>
     <div class="card"><b>Community list (Pro)</b>Channels reported by 3+ people and reviewed by a human.</div>
   </div>
 
-  <h2>Never hides by mistake without telling you</h2>
-  <p>Unsure matches get a badge, not hidden. Every hidden video has a “Show” button and a “Not AI” button, and hovering the badge shows why it was flagged.</p>
+  <h2>Nothing disappears without telling you</h2>
+  <p>Unsure matches only get a label. When videos are hidden, a small note at the bottom of the page says how many, with a “Show” button. Hover any label to see why it was flagged, and click “Not AI” to never flag that channel again.</p>
 
   <h2>Why</h2>
   <blockquote>“Half my feed or suggestions are AI crap… it takes you a while to catch them.” – a Hacker News reader</blockquote>
